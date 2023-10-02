@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { RegisterDto } from '@auth/dto';
 import {
   ValidationArguments,
@@ -14,7 +15,6 @@ export class IsPasswordsMatchingConstraint
     return obj.password === passwordRepeat;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   defaultMessage(validationArguments?: ValidationArguments): string {
     return 'Пароли не совпадают';
   }
